@@ -51,8 +51,8 @@ data = [{ "message": "My dog is throwing up" },
 		{ "message": "There's a pet emergency " },
 		]
 
-@app.route('/x',methods=['GET'])
-def x():
+@app.route('/excuse',methods=['GET'])
+def display():
 	title ="Excuse"
 	n = random.randint(0,len(data)-1)
 	response = requests.get(BASE+"excuse/"+str(n))
