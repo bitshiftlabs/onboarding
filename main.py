@@ -20,6 +20,11 @@ class ExcuseModel(db.Model):
 excuse_put_args = reqparse.RequestParser()
 excuse_put_args.add_argument("message", type=str, help="Name of the Excuse is required", required=True)
 
+
+excuse_update_args = reqparse.RequestParser()
+excuse_update_args.add_argument("message", type=str, help="Name of the Excuse is required", required=True)
+
+
 resource_fields = {
 	'id': fields.Integer,
 	'message': fields.String,
@@ -43,6 +48,20 @@ class Excuse(Resource):
 		db.session.add(excuse)
 		db.session.commit()
 		return excuse, 201
+
+	@marshal_with(resource_fields)
+	def patch(self, excuse_id):
+		args = excuse_update_args.parse_args()
+		result = ExcuseModel.query.filter_by(id = excuse_id).first()
+		if not result:
+			abort(404, message = "Excuse doesn't exist... , cannot update ")
+		if args['message']:
+			result.message = args['message']
+
+		db.session.commit()
+
+		return result
+
 
 api.add_resource(Excuse, "/excuse/<int:excuse_id>")
 
