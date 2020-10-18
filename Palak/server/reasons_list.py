@@ -1,0 +1,77 @@
+Reasons={"cancel a party":["I'm not feeling well today",
+                           "Sorry,I can't come",
+                           'Sorry,I have to attend another party',
+                           'Sorry,I have planned a trip today',
+                           "Sorry, My mom is ill",
+                           "Sorry,I am ill",
+                           "Sorry,my dad is ill",
+                           "I am quarantined",
+                           "I am tired.",
+                           "I drank too much last night"],
+        "cancel a trip":["Sorry,I'm not feeling well today",
+                         "I don't have money.",
+                         "I don't have my own vehicle",
+                         "I am quarantined",
+                         "I am tired.",
+                         'Sorry,I have planned a trip today',
+                         "Sorry, My mom is ill",
+                         "Sorry,I am ill",
+                         "Sorry,my dad is ill",
+                         "I drank too much last night"],
+        "chill on a wednesday":["It's my choice",
+                                "As I have finished my work on tuesday",
+                                "I am quarantined",
+                                "I have scored full marks in my exam",
+                                "I exams are finished",
+                                "I have nothig to do",],
+        "skip a family function":["I have my exams on this date",
+                                  "I have my tests on this date",
+                                  "I am not feeling well",
+                                  "I am quarantined",
+                                  "I am tired",
+                                  'Sorry,I have planned a trip today',
+                                  "Sorry, My mom is ill",
+                                  "Sorry,I am ill",
+                                  "Sorry,my dad is ill"],
+        "buy a car":["Peace Of Mind",
+                     "Easier Finance Schemes"
+                     "Depreciation Is Taken Care Of",
+                     "You Can Upgrade In Life",
+                     "Buying A Used Car Saves Money"
+                     ],
+        "buy a cat":["Cats can bathe themselves",
+                     " Cats will keep your house and yard rodent-free",
+                     "Cats are low-maintenance and independent",
+                     "Cats are an eco-friendly pet choice",
+                     "Cats can help reduce stress"],
+        "buy a dog":["Dogs make Us Laugh",
+                    "Dogs are loyal"
+                    "we're more social with a dog",
+                    "Dogs keep Us Healthy",
+                    "We are more active with dogs",
+                    "Dogs save lives",
+                    "Dogs give Us a sense of purpose",
+                    "Dogs give us confidence",
+                    "Dogs make Us Genuinely Happy",
+                    "Dogs are faithful and responsible"
+                    ],
+        "avoid a lecture":["Tell your professor you got food poisoning",
+                          "Let your professor know that you’re scheduled for jury duty. They can’t argue with the law. Tread lightly, however, if your prof is the type to ask for proof."
+                          "Simply tell your professor that you’ve been in the bathroom all morning. No one wants to hear the details on your diarrhea, so they likely won’t pry any further."
+                          "Claim that you accidentally ate some peanuts and you’re having an allergic reaction. No one’s going to make you come to class if you’re breaking out in hives. The best part—you don’t need a doctor’s note."
+                          "Whether it was a fender bender or a four-car pile up, accidents are a great excuse to get an extension."
+                          "Tell your teacher that you locked your keys in your car and by the time Triple-A comes to the rescue, class will be over."
+                          "Tell your professor your car got stolen,you have no way of getting to school. Say that you have to file a police report, even though the only cars getting jacked are the pixelated ones on your TV."
+                          "If you tell your teacher you contracted lice over the weekend, they’ll actually be thankful you didn’t come to class. The email is quick and easy: “That’s the last time I’m buying a beanie from a thrift store…”"
+                          "MY ALARM NEVER WENT OFF"
+                          "I drank too much last night"
+                          "I am ill",
+                          "I am suffering from fever",
+                          "I have a family function",
+                          "I am quarantined"],
+        "excuses for incomplete homework":["I was ill",
+                                            "Tell your professor you got food poisoning",
+                                            "I had a family function",
+                                            "Had headache",
+                                            "forgot copy at home",
+                                            "I didn't get the topics you taught in last lecture"]}
