@@ -33,31 +33,13 @@ resource_fields = {
 
 BASE = "http://127.0.0.1:5000/"
 
-# This is already set up in the database this is for visualization purpose.
-data = [{ "message": "My dog is throwing up" },
-		{ "message": "I have some  work" },
-		{ "message": "I have a package I have to sign for" },
-		{ "message": "OMG I totally forgot we had plans" },
-		{ "message": "I had a stomach full meal I can't move " },
-		{ "message": "I totally missed this!" },
-		{ "message": "I haven't finished planning yet" },
-		{ "message": "It's a work in progress" },
-		{ "message": "I've got too many urgent things to do " },
-		{ "message": "I Dont have permission" },
-		{ "message": "I'm not feeling well" },
-		{ "message": "I have work tonight" },
-		{ "message": "I have work early tomorrow" },
-		{ "message": "Oh, was that tonight" },
-		{ "message": "There's a pet emergency " },
-		]
-
 @app.route('/excuse',methods=['GET'])
-def display():
+def excuse():
 	title ="Excuse"
-	n = random.randint(0,len(data)-1)
-	response = requests.get(BASE+"excuse/"+str(n))
+	n = db.session.query(db.func.max(ExcuseModel.id)).scalar()
+	i = random.randint(0,n-1)
+	response = requests.get(BASE+"excuse/"+str(i))
 	return response.json()
-
 
 class Excuse(Resource):
 	@marshal_with(resource_fields)
