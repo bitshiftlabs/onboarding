@@ -33,8 +33,8 @@ resource_fields = {
 
 BASE = "http://127.0.0.1:5000/"
 
-@app.route('/excuse',methods=['GET'])
-def excuse():
+@app.route('/message',methods=['GET'])
+def message():
 	title ="Excuse"
 	n = db.session.query(db.func.max(ExcuseModel.id)).scalar()
 	i = random.randint(0,n-1)
