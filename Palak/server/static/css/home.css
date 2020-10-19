@@ -1,0 +1,38 @@
+body{
+  background-color: #d9ecf2;
+text-align: center;
+}
+#head{
+  font-family: 'Piedra', cursive;
+  font-size: 3rem;
+}
+.card-title{
+  font-family: 'Piedra', cursive;
+  font-size: 2.1rem;
+}
+header{
+    padding:30px;
+}
+#menu-container .card{
+    border:1px solid #999;
+    background-color:#0f3057;
+    color:#ccc;
+    left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+        position: relative;
+
+}
+
+#menu-container .card:hover{
+    color:#0f3057;
+    background-color:#d9ecf2;
+    left: 10px;
+    padding-left: -20px;
+}
+.btn{
+  background-color: #eeeeee;
+  color:#0f3057;
+}
