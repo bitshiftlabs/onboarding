@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/styles/home.css">
+    <title>💡Find an Excuse-API</title>
+  </head>
+  <body>
+    <h1>💡Find an Excuse to your problem!💡</h1>
+    <hr>
+    <p>-a free API to find excuses/reasons to different problems</p>
+    <div class="container">
+      <h2>API Usage Guidlines:</h2>
+      <table align="center" border="2px solid" >
+        <tr>
+          <td><h3>GET(endpoint):</h3></td>
+          <td><a href="http://127.0.0.1:5000"></a>http://127.0.0.1:5000</td>
+        </tr>
+        <tr>
+          <td>http://127.0.0.1:5000/reasons/X</td>
+            <td>will return a random reason to your problem,X can be:<ul>
+              <li>Chill on a Wednesday</li>
+              <li> Skip a family function</li>
+              <li>Buy a dog</li>
+              <li>cancel a trip</li>
+              <li>cancel a party</li>
+              <li>buy a dog</li>
+              <li>buy a cat</li>
+              <li>buy a car</li>
+              <li>avoid a lecture</li>
+              <li>excuses for incomplete homework</li>
+            </ul></td>
+        </tr>
+        <tr>
+          <td>http://127.0.0.1:5000/reasons</td>
+          <td>will return all available problems with their reasons</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
