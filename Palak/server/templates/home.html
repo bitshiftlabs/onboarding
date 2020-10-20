@@ -2,40 +2,117 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="static/styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
     <title>💡Find an Excuse-API</title>
   </head>
   <body>
-    <h1>💡Find an Excuse to your problem!💡</h1>
-    <hr>
-    <p>-a free API to find excuses/reasons to different problems</p>
-    <div class="container">
-      <h2>API Usage Guidlines:</h2>
-      <table align="center" border="2px solid" >
-        <tr>
-          <td><h3>GET(endpoint):</h3></td>
-          <td><a href="http://127.0.0.1:5000"></a>http://127.0.0.1:5000</td>
-        </tr>
-        <tr>
-          <td>http://127.0.0.1:5000/reasons/X</td>
-            <td>will return a random reason to your problem,X can be:<ul>
-              <li>Chill on a Wednesday</li>
-              <li> Skip a family function</li>
-              <li>Buy a dog</li>
-              <li>cancel a trip</li>
-              <li>cancel a party</li>
-              <li>buy a dog</li>
-              <li>buy a cat</li>
-              <li>buy a car</li>
-              <li>avoid a lecture</li>
-              <li>excuses for incomplete homework</li>
-            </ul></td>
-        </tr>
-        <tr>
-          <td>http://127.0.0.1:5000/reasons</td>
-          <td>will return all available problems with their reasons</td>
-        </tr>
-      </table>
+    <nav class="navbar navbar-expand-lg static-top">
+</nav>
+    <header >
+      <h1 id="head">💡Find an Excuse to your plobem!💡</h1>
+      <hr>
+      <p>-a free API to find excuses/reasons to different problems</p>
+    </header>
+
+  <div class="card-columns" id="menu-container">
+  <div class="card view overlay zoom">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/dog.webp') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Find reasons to buy a Dog</h5>
+      <p class="card-text">Do you know? Having a dog makes YOU more awesome!</p>
+      <a href="/reasons/buy a dog" class="btn btn-primary">Find a Reason!</a>
     </div>
+  </div>
+
+  <div class="card p-3 ">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/car.webp') }}" alt="Card image cap">
+    <blockquote class="blockquote mb-0 card-body">
+      <h5 class="card-title">Wanna buy a Car!?</h5>
+      <p>Stop overthing and find a reason!</p>
+      <footer class="blockquote-footer">
+          <a href="/reasons/buy a car" class="btn btn-primary">Find a Reason!</a>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/familyfunction.webp') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Avoid a Family Function</h5>
+      <p class="card-text">Wanna avoid a family function but can't find an excuse? </p>
+      <a href="/reasons/skip a family function" class="btn btn-primary">Find a Reason!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/bunk.webp') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Avoid a lecture</h5>
+      <p class="card-text">Get ideas to bunk a lecture!</p>
+      <a href="/reasons/avoid a lecture" class="btn btn-primary">Find a Reason!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/homework.webp') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Excuses for incomplete homework</h5>
+      <p class="card-text">Get an amazing excuse for your incomplete homework!</p>
+      <a href="/reasons/excuses for incomplete homework" class="btn btn-primary">Find a Reason!</a>
+    </div>
+  </div>
+  <div class="card text-center p-3">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/cancelparty.webp') }}" alt="Card image cap">
+    <blockquote class="blockquote mb-0">
+      <h5 class="card-title">Cancel a Party!</h5>
+      <p>Click on the button below to find an Excuse.</p>
+      <footer class="blockquote-footer">
+          <a href="/reasons/cancel a party" class="btn btn-primary">Find a Reason!</a>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/canceltrip.webp') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Cancel a trip!</h5>
+      <p class="card-text">Get amazing ideas to cancel a fully planned trip!</p>
+      <a href="/reasons/cancel a trip" class="btn btn-primary">Find a Reason!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="{{ url_for('static',filename='images/cat.webp') }}" alt="Card image">
+  </div>
+
+  <div class="card p-3 ">
+    <blockquote class="blockquote mb-0">
+      <h5 class="card-title">Should I buy a Cat!?</h5>
+      <p>You should know reasons before buying anything, find a reason!</p>
+      <footer class="blockquote-footer">
+          <a href="/reasons/buy a cat" class="btn btn-primary">Find a Reason!</a>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card p-3">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/familyfunction.webp') }}" alt="Card image cap">
+    <blockquote class="blockquote mb-0 card-body">
+      <h5 class="card-title">Skip a family function!</h5>
+      <footer class="blockquote-footer">
+        <a href="/reasons/skip a family function" class="btn btn-primary">Find a Reason!</a>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card last">
+    <img class="card-img-top" src="{{ url_for('static',filename='images/party.webp') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Chill on a Wednesday!</h5>
+      <a href="/reasons/Chill on a Wednesday" class="btn btn-primary">Find a Reason!</a>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+ <script src="{{ url_for('static',filename='js/home.js') }}" charset="utf-8"></script>
   </body>
 </html>
