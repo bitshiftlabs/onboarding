@@ -1,3 +1,4 @@
+'''Dictionary for storing reasons'''
 Reasons={"cancel a party":["I'm not feeling well today",
                            "Sorry,I can't come",
                            'Sorry,I have to attend another party',
@@ -56,13 +57,29 @@ Reasons={"cancel a party":["I'm not feeling well today",
                     "Dogs are faithful and responsible"
                     ],
         "avoid a lecture":["Tell your professor you got food poisoning",
-                          "Let your professor know that you’re scheduled for jury duty. They can’t argue with the law. Tread lightly, however, if your prof is the type to ask for proof."
-                          "Simply tell your professor that you’ve been in the bathroom all morning. No one wants to hear the details on your diarrhea, so they likely won’t pry any further."
-                          "Claim that you accidentally ate some peanuts and you’re having an allergic reaction. No one’s going to make you come to class if you’re breaking out in hives. The best part—you don’t need a doctor’s note."
-                          "Whether it was a fender bender or a four-car pile up, accidents are a great excuse to get an extension."
-                          "Tell your teacher that you locked your keys in your car and by the time Triple-A comes to the rescue, class will be over."
-                          "Tell your professor your car got stolen,you have no way of getting to school. Say that you have to file a police report, even though the only cars getting jacked are the pixelated ones on your TV."
-                          "If you tell your teacher you contracted lice over the weekend, they’ll actually be thankful you didn’t come to class. The email is quick and easy: “That’s the last time I’m buying a beanie from a thrift store…”"
+                          "Let your professor know that you’re scheduled for jury "\
+                          "duty. They can’t argue with the law. Tread lightly, however"\
+                          ", if your prof is the type to ask for proof."
+                          "Simply tell your professor that you’ve been in the bathroom"\
+                          " all morning. No one wants to hear the details on your "\
+                          "diarrhea, so they likely won’t pry any further."
+                          "Claim that you accidentally ate some peanuts and you’re"\
+                          " having an allergic reaction. No one’s going to make"\
+                          " you come to class if you’re breaking out in hives. "\
+                          "The best part—you don’t need a doctor’s note."
+                          "Whether it was a fender bender or a four-car pile up,"\
+                          " accidents are a great excuse to get an extension."
+                          "Tell your teacher that you locked your keys in your"\
+                          " car and by the time Triple-A comes to the rescue,"\
+                          " class will be over."
+                          "Tell your professor your car got stolen,you have no"\
+                          " way of getting to school. Say that you have to file"\
+                          " a police report, even though the only cars getting "\
+                          "jacked are the pixelated ones on your TV."
+                          "If you tell your teacher you contracted lice over "\
+                          "the weekend, they’ll actually be thankful you didn’t "\
+                          "come to class. The email is quick and easy: “That’s the"\
+                          " last time I’m buying a beanie from a thrift store…”"
                           "MY ALARM NEVER WENT OFF"
                           "I drank too much last night"
                           "I am ill",
@@ -75,17 +92,37 @@ Reasons={"cancel a party":["I'm not feeling well today",
                                             "Had headache",
                                             "forgot copy at home",
                                             "I didn't get the topics you taught in last lecture"],
-        "live life":["Life is an invitation to learn. We can learn something from every moment, good or bad. ",
-                     "Life is not static; it's in constant movement, much like the waves of the ocean. Each wave that comes brings with it new experiences, and each one is different. Just as the bad waves can sometimes show no mercy, the good ones come along and refresh us. Nothing lasts forever.",
-                     "Life is a gift; some people depart too soon and don’t have the fortune to know life. Those who have it should enjoy it.",
-                     "Our lives are not only our own. They also belong to those who surround us. We should take care of ourselves because we are important to others—even though we sometimes forget it.",
-                     "Each new day is a new experience. If we don't live it, we won't know what we’re missing.",
-                     "We are the designers of our life. It is our challenge to find beauty, even—and especially—when the opposite occurs. Finding beauty in the world is possible and brings countless rewards.",
-                     "We all live through experiences that leave scars. However, there is always someone to give us a hand during those difficult times. The important thing is to accept that help.",
-                     "Making an effort to deal with problems can make us aware of how strong we really are. Life's challenges don't exist only to upset us—they exist so that we understand ourselves better and get to know who we really are. ",
-                     "To live is to discover something about ourselves of which we were not aware. ",
-                     "To live is to look at ourselves in the mirror and discover a message of love in our own eyes.",
-                     "To live is to allow ourselves to fall in love—with someone, with something, or with life itself. "],
+        "live life":["Life is an invitation to learn. We can learn something from every"\
+                    " moment, good or bad. ",
+                     "Life is not static; it's in constant movement, much like the "\
+                     "waves of the ocean. Each wave that comes brings with it new "\
+                     "experiences, and each one is different. Just as the bad waves"\
+                     " can sometimes show no mercy, the good ones come along and "\
+                     "refresh us. Nothing lasts forever.",
+                     "Life is a gift; some people depart too soon and don’t have"\
+                     " the fortune to know life. Those who have it should enjoy it.",
+                     "Our lives are not only our own. They also belong to those "\
+                     "who surround us. We should take care of ourselves because "\
+                     "we are important to others—even though we sometimes forget it.",
+                     "Each new day is a new experience. If we don't live it, we "\
+                     "won't know what we’re missing.",
+                     "We are the designers of our life. It is our challenge to"\
+                     " find beauty, even—and especially—when the opposite occurs."\
+                     " Finding beauty in the world is possible and brings countless rewards.",
+                     "We all live through experiences that leave scars. However, "\
+                     "there is always someone to give us a hand during those "\
+                     "difficult times. The important thing is to accept that help.",
+                     "Making an effort to deal with problems can make us"\
+                     " aware of how strong we really are. Life's "\
+                     "challenges don't exist only to upset "\
+                     "us—they exist so that we understand ourselves better and"\
+                     " get to know who we really are. ",
+                     "To live is to discover something about ourselves of "\
+                     "which we were not aware. ",
+                     "To live is to look at ourselves in the mirror and discover"\
+                     " a message of love in our own eyes.",
+                     "To live is to allow ourselves to fall in love—with someone,"\
+                     " with something, or with life itself. "],
         "work on sunday":["to attain success",
                           "Avoid messing up on Monday",
                           "Meetings preparation",
@@ -96,7 +133,10 @@ Reasons={"cancel a party":["I'm not feeling well today",
                           "Planning things for next week",
                           "To devote time for responding to pending Emails",
                           "to Work without disturbance"],
-        "enjoy weekend":["'If you don’t have a start and an end to a week, then it’s just one long continuous work week, which can be problematic,'says Jonathan Alpert, a psychotherapist and performance coach in New York City and author of the book 'Be Fearless: Change Your Life In 28 Days'.",
+        "enjoy weekend":["'If you don’t have a start and an end to a week, "\
+        "then it’s just one long continuous work week, which can be problematic,"\
+        "'says Jonathan Alpert, a psychotherapist and performance coach in New York"\
+        " City and author of the book 'Be Fearless: Change Your Life In 28 Days'.",
                          "Working excessive weekend hours can also damage your mental health",
                          "Change your way of thinking",
                          "Give yourself a break from work",
@@ -129,7 +169,8 @@ Reasons={"cancel a party":["I'm not feeling well today",
                        "Healthy Diets May Lengthen Your Life"
                        ],
         "avoid junkfood":["Junk food may be the reason behind your fatigue",
-                          "If you eat junk food every time you’re hungry, you may feel chronically fatigued.",
+                          "If you eat junk food every time you’re hungry, "\
+                          "you may feel chronically fatigued.",
                           "Junks food may lead to depression in teenagers",
                           "It impairs digestion",
                           "It causes fluctuations in blood sugar levels",
@@ -139,36 +180,67 @@ Reasons={"cancel a party":["I'm not feeling well today",
                           "It can damage your liver",
                           "It can cause type 2 diabetes",
                           "It increases your risk of cancer"],
-        "love studies":["Studies show us there is little correlation between salary earned and job satisfaction. ",
-                        " But should we all follow our passions? Studies also show us that doing so can be a recipe for professional disaster, simply for the fact that many passions aren’t transferrable to skills that can be marketed. ",
+        "love studies":["Studies show us there is little correlation"\
+                        " between salary earned and job satisfaction. ",
+                        " But should we all follow our passions? Studies "\
+                        "also show us that doing so can be a recipe for professional disaster, "\
+                        "simply for the fact that many passions aren’t transferrable "\
+                        "to skills that can be marketed. ",
                         "Studying Gives You Purpose",
                         "Studying Develops Your Character",
                         "Studying Always Rewards",
                         "Studying Broadens Your Horizons",
                         "Studying Gives You Options",
-                        "Good grades will also allow you access to more courses, and your Matric 80% for a subject might just be the differentiating factor between you and another applicant for a job! ",
-                        "Studying now allows you to become a better version of yourself in your future.",
+                        "Good grades will also allow you access to more courses, "\
+                        "and your Matric 80% for a subject might just be the "\
+                        "differentiating factor between you and another applicant for a job! ",
+                        "Studying now allows you to become a better version "\
+                        "of yourself in your future.",
                         "Achievement generates self-confidence! "
                         ],
         "wear a mask":["To keep your friends and neighbors safe",
-                       "Wearing a mask sets a good example and encourages others to wear masks too. That means everyone is less likely to get ill.",
-                       "It is so easy. Wearing a mask, for most people, is as easy a thing as could possibly be accomplished. It is a small thing that makes a big difference.",
-                       "It’s a form of self-expression. For those artistic folks among us, a mask presents a whole new opportunity to introduce fun colors and patterns to their wardrobe.",
-                       "For healthcare workers and first responders. As someone who works in a hospital, I love this reason for wearing a mask. Even if you never come into direct contact with a hospital worker or first responder, your mask shows them you care. You are keeping them safe by limiting the spread of illness in your community. We appreciate it!",
-                       "To get back to business. Right on. The more people wear masks, the fewer cases there will be. ",
-                       "To get back to fun. Masks lessen cases. The more of us wear masks, the sooner we will be able to do things like visit friends, go to movies, travel where we want, and eat out safely.",
-                       "To embrace the new normal. Showing yourself in your mask helps normalize it for people who are still uncomfortable with wearing theirs.",
-                       "Many note that they wear their masks particularly to protect the most vulnerable people in our communities, including the elderly and those with conditions that put them at higher risk.",
+                       "Wearing a mask sets a good example and encourages others "\
+                       "to wear masks too. That means everyone is less likely to get ill.",
+                       "It is so easy. Wearing a mask, for most people, is as easy "\
+                       "a thing as could possibly be accomplished. It is a small "\
+                       "thing that makes a big difference.",
+                       "It’s a form of self-expression. For those artistic folks "\
+                       "among us, a mask presents a whole new opportunity to "\
+                       "introduce fun colors and patterns to their wardrobe.",
+                       "For healthcare workers and first responders. As someone "\
+                       "who works in a hospital, I love this reason for wearing a "\
+                       "mask. Even if you never come into direct contact with a hospital "\
+                       "worker or first responder, your mask shows them you care."\
+                       " You are keeping them safe by limiting the spread of illness"\
+                       " in your community. We appreciate it!",
+                       "To get back to business. Right on. The more people wear masks,"\
+                       " the fewer cases there will be. ",
+                       "To get back to fun. Masks lessen cases. The more of us wear masks,"\
+                       " the sooner we will be able to do things like visit friends, go "\
+                       "to movies, travel where we want, and eat out safely.",
+                       "To embrace the new normal. Showing yourself in your mask helps"\
+                       " normalize it for people who are still uncomfortable with wearing theirs.",
+                       "Many note that they wear their masks particularly to protect the "\
+                       "most vulnerable people in our communities, including the elderly and "\
+                       "those with conditions that put them at higher risk.",
                        "They reduce viral transmission (if worn correctly).",
                        "They prevent asymptomatic spread."],
-        "avoid ac":["While it is a relief to walk into a cool room after being out in the hot sun, prolonged use of air conditioners causes more harm than good. ",
-                    "ACs pull out moisture from the skin as well and leave it feeling dry and stretched",
-                    "If your skin is not sufficiently protected to combat it, constant dryness will affect the inner layer of the skin. When skin becomes dry and stretched, it feels itchy. ",
+        "avoid ac":["While it is a relief to walk into a cool room after being out in the"\
+        " hot sun, prolonged use of air conditioners causes more harm than good. ",
+                    "ACs pull out moisture from the skin as well and leave it feeling dry "\
+                    "and stretched",
+                    "If your skin is not sufficiently protected to combat it, constant dryness "\
+                    "will affect the inner layer of the skin. When skin becomes dry and stretched,"\
+                    " it feels itchy. ",
                     "Those who have a dry skin will notice that their skin becomes flaky.",
-                    "Air conditioners aggravate skin disorders,” says cosmetologist and skin specialist, Dr Rajan T D.",
-                    "AC removes water i.e. humidity from indoor air and robs the outer layer of the epidermis of skin. ",
-                    "When ACs remove the water or humidity content from a room, skin starts shrivelling. Skin also becomes prone to developing creases and wrinkles.",
-                    "Sudden shift from one extreme climate to another extreme is very stressful for the body.",
+                    "Air conditioners aggravate skin disorders,” says cosmetologist and skin"\
+                    " specialist, Dr Rajan T D.",
+                    "AC removes water i.e. humidity from indoor air and robs the outer layer"\
+                    " of the epidermis of skin. ",
+                    "When ACs remove the water or humidity content from a room, skin starts"\
+                    " shrivelling. Skin also becomes prone to developing creases and wrinkles.",
+                    "Sudden shift from one extreme climate to another extreme is very stressful"\
+                    " for the body.",
                     ],
         "buy a bicycle":["It’s really, really good for your heart",
                          "Boost your immune system",
@@ -195,8 +267,10 @@ Reasons={"cancel a party":["I'm not feeling well today",
             "opportunities for hands-on learning about physical forces and concepts",
             "reduced stress levels, better moods, and improved concentration",
             "more naturally-attuned sleep rhythms",
-            "enhanced opportunities to learn social skills, overcome fears, and develop a lifelong connection with nature.",
-            " it's possible that outdoor play could help reduce the incidence of behavior problems, and help fight obesity."
+            "enhanced opportunities to learn social skills, overcome fears, and "\
+            "develop a lifelong connection with nature.",
+            " it's possible that outdoor play could help reduce the incidence of "\
+            "behavior problems, and help fight obesity."
             ],
         "make new friends":["Open yourself up to new possibilities.",
                             "Offer different perspectives.",
@@ -208,4 +282,5 @@ Reasons={"cancel a party":["I'm not feeling well today",
                             "Fresh start.",
                             "Introduce you to more people.",
                             "Bring more joy to your life.",
-                            "The research has been done and the findings are clear, friendships enhance our lives."]}
+                            "The research has been done and the findings are clear, "\
+                            "friendships enhance our lives."]}

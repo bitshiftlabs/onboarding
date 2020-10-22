@@ -1,23 +1,26 @@
+'''importing required modules'''
 import unittest
-import requests
-from reasons_list import Reasons
 from api import app
 
 class Testing(unittest.TestCase):
+    '''Testing class for uniy testing'''
     def test_home(self):
-        r =app.test_client(self)
-        response = r.get("/")
+        '''tests for status code when a get request is made to home page'''
+        tester =app.test_client(self)
+        response = tester.get("/")
         statuscode = response.status_code
         self.assertEqual(statuscode, 200)
 
     def test_home_content(self):
-        r = app.test_client(self)
-        response = r.get("/")
+        '''tests for the content type of home page returned'''
+        tester = app.test_client(self)
+        response = tester.get("/")
         self.assertEqual(response.content_type, "text/html; charset=utf-8")
 
     def test_get_a_reason_1(self):
-        r = app.test_client(self)
-        response = r.get("/reasons/buy a dog", content_type="html/text")
+        '''tests whether the returned information belongs to the requested page'''
+        tester = app.test_client(self)
+        response = tester.get("/reasons/buy a dog", content_type="html/text")
         self.assertTrue(b"Dogs make Us Laugh" or
                     "Dogs are loyal" or
                     "we're more social with a dog" or
@@ -30,8 +33,9 @@ class Testing(unittest.TestCase):
                     "Dogs are faithful and responsible" in response.data)
 
     def test_get_a_reason_2(self):
-        r = app.test_client(self)
-        response = r.get("/reasons/cancel a trip", content_type="html/text")
+        '''tests whether the returned information belongs to the requested page'''
+        tester = app.test_client(self)
+        response = tester.get("/reasons/cancel a trip", content_type="html/text")
         self.assertTrue(b"Sorry,I'm not feeling well today"or
                          "I don't have money."or
                          "I don't have my own vehicle"or
@@ -42,19 +46,21 @@ class Testing(unittest.TestCase):
                          "Sorry,I am ill"or
                          "Sorry,my dad is ill"or
                          "I drank too much last night" in response.data)
-    def test_get_a_reason_2(self):
-        r = app.test_client(self)
-        response = r.get("/reasons/chill on a wednesday", content_type="html/text")
+    def test_get_a_reason_3(self):
+        '''tests whether the returned information belongs to the requested page'''
+        tester = app.test_client(self)
+        response = tester.get("/reasons/chill on a wednesday", content_type="html/text")
         self.assertTrue(b"It's my choice"or
                                 "As I have finished my work on tuesday"or
                                 "I am quarantined"or
                                 "I have scored full marks in my exam"or
                                 "My exams are finished"or
-                                "I have nothig to do" in response.data)
+                                "I have nothing to do" in response.data)
 
     def test_wrong_key_error(self):
-        r = app.test_client(self)
-        response = r.get("/reasons/guhijlkouih", content_type="html/text")
+        '''tests if the 404 error gives correct response to the user'''
+        tester = app.test_client(self)
+        response = tester.get("/reasons/guhijlkouih", content_type="html/text")
         self.assertTrue(b"Error:404:Key does not exist" in response.data)
 
 if __name__ =='__main__':
