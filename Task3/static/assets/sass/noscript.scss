@@ -1,0 +1,27 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+
+
+/* Header */
+
+	body.is-preload {
+		#header {
+			.inner {
+				@include vendor('transform', 'none');
+				opacity: 1;
+
+				.actions {
+					@include vendor('transform', 'none');
+					opacity: 1;
+				}
+			}
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
